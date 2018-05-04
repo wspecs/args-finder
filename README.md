@@ -22,7 +22,23 @@
 ## Usage
 
 ```js
-const tsm.name = require('tsm.name');
+// node dist/index.js create --nostart --decent --lauch=dev speed 3
+
+const argsFinder = require('args-finder');
+
+console.log(argsFinder.operation);
+// create
+
+console.log(argsFinder.commands);
+// ['create']
+
+console.log(argsFinder.options);
+// {
+//   start: false,
+//   decent: true,
+//   launch: 'dev',
+//   speed: 3
+// }
 ```
 
 ## Install
@@ -39,7 +55,10 @@ const tsm.name = require('tsm.name');
 
 Package | Version | Dev
 --- |:---:|:---:
+[@types/node](https://www.npmjs.com/package/@types/node) | ^8.10.12 | ✖
+[minimist](https://www.npmjs.com/package/minimist) | ^1.2.0 | ✖
 [@types/chai](https://www.npmjs.com/package/@types/chai) | ^4.1.3 | ✔
+[@types/minimist](https://www.npmjs.com/package/@types/minimist) | ^1.2.0 | ✔
 [@types/mocha](https://www.npmjs.com/package/@types/mocha) | ^5.2.0 | ✔
 [chai](https://www.npmjs.com/package/chai) | ^4.1.2 | ✔
 [mocha](https://www.npmjs.com/package/mocha) | ^5.1.1 | ✔

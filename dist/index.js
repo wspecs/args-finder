@@ -1,4 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var utils_1 = require("./lib/utils");
-exports.appName = utils_1.appName;
+exports.options = utils_1.options;
+exports.commands = utils_1.commands;
+exports.operation = utils_1.operation;
